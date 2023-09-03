@@ -1,32 +1,17 @@
-# Prerequisites
-*.d
+#include <iostream>
+#include <cmath>
+using namespace std;
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+int main() {
+    int a, b;
+    cin >> a >> b;
 
-# Precompiled Headers
-*.gch
-*.pch
+    for (int i = a; i <= b; i++) {
+        int root = sqrt(i);
+        if (root * root == i) {
+            cout << i << " ";
+        }
+    }
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+    return 0;
+}
